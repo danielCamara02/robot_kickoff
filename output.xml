@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-09-03T16:20:52.624529" rpa="false" schemaversion="5">
+<suite id="s1" name="Structure" source="/home/dcrocha/robot_kickoff/web-test-name/tests/structure.robot">
+<test id="s1-t1" name="Example test 2 - opening amazon web site" line="19">
+<kw name="Open Amazon">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-03T16:20:52.758769" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
+<arg>https://www.amazon.com.br</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-03T16:20:52.758463" elapsed="2.661420"/>
+</kw>
+<status status="PASS" start="2024-09-03T16:20:52.757464" elapsed="2.662699"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-03T16:20:55.420510" elapsed="0.126240"/>
+</kw>
+<status status="PASS" start="2024-09-03T16:20:52.756734" elapsed="2.790907"/>
+</test>
+<status status="PASS" start="2024-09-03T16:20:52.627009" elapsed="2.922172"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Structure">Structure</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
