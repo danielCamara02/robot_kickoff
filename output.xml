@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-09-03T16:20:52.624529" rpa="false" schemaversion="5">
-<suite id="s1" name="Structure" source="/home/dcrocha/robot_kickoff/web-test-name/tests/structure.robot">
-<test id="s1-t1" name="Example test 2 - opening amazon web site" line="19">
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-09-09T11:34:09.083809" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="/home/dcrocha/robot_kickoff/web-test-name/tests/form.robot">
+<test id="s1-t1" name="Test1" line="22">
 <kw name="Open Amazon">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-03T16:20:52.758769" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br'.</msg>
-<arg>https://www.amazon.com.br</arg>
+<msg time="2024-09-09T11:34:10.107517" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'.</msg>
+<arg>https://www.amazon.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-03T16:20:52.758463" elapsed="2.661420"/>
+<status status="PASS" start="2024-09-09T11:34:10.107198" elapsed="11.727184"/>
 </kw>
-<status status="PASS" start="2024-09-03T16:20:52.757464" elapsed="2.662699"/>
+<status status="PASS" start="2024-09-09T11:34:10.106344" elapsed="11.728453"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-03T16:20:55.420510" elapsed="0.126240"/>
+<kw name="Search">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-09T11:34:21.837345" level="INFO">Typing text 'The Hobbit' into text field 'id:twotabsearchtextbox'.</msg>
+<arg>${AMAZON_SEARCH_BAR_TEXT_FIELD}</arg>
+<arg>${search_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-09T11:34:21.836120" elapsed="0.283903"/>
 </kw>
-<status status="PASS" start="2024-09-03T16:20:52.756734" elapsed="2.790907"/>
+<arg>The Hobbit</arg>
+<status status="PASS" start="2024-09-09T11:34:21.835341" elapsed="0.285007"/>
+</kw>
+<kw name="Click Amazon search">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-09T11:34:22.121710" level="INFO">Clicking element 'id:nav-search-submit-button'.</msg>
+<arg>${AMAZON_SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-09T11:34:22.121270" elapsed="3.070842"/>
+</kw>
+<status status="PASS" start="2024-09-09T11:34:22.120741" elapsed="3.071636"/>
+</kw>
+<status status="PASS" start="2024-09-09T11:34:10.105690" elapsed="15.087130"/>
 </test>
-<status status="PASS" start="2024-09-03T16:20:52.627009" elapsed="2.922172"/>
+<status status="PASS" start="2024-09-09T11:34:09.087942" elapsed="16.105696"/>
 </suite>
 <statistics>
 <total>
@@ -27,7 +43,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Structure">Structure</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
 </suite>
 </statistics>
 <errors>
