@@ -19,7 +19,7 @@ Click Amazon search
 
 
 *** Test Cases ***
-Test1
+Search for 'The Hobbit' book in Amazon web site
     Open Amazon
     Search    The Hobbit
     Click Amazon search
